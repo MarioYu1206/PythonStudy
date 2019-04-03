@@ -13,3 +13,9 @@
 
 message = "hello world!"
 print(message)
+
+message_a = 'this is message a'
+print(message_a)
+
+message_a = 'update message a to b'
+print(message_a)
