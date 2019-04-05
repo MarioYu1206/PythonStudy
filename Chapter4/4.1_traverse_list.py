@@ -7,3 +7,19 @@ for magician in magicians:
     print(magician.title() + ", that was a great trick!")
     print("I can't wait to see your next trick, " + magician.title() + ".\n")
 print("Thank you, everyone. That was a great magic show!")
+
+
+
+#练习
+#practice 1
+pizzas = ['tomato','cheese','seafood']
+for pizza in pizzas:
+    print("I like " + pizza + "pizza!\n")
+print("I really like pizza!")
+
+#practice 2
+animals = ['cat','dog','deer']
+for animal in animals:
+    print(animal)
+    print("A" + animal + " would make a great pet!\n")
+print("All of these animals would make a great pet!")
