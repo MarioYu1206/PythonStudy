@@ -95,3 +95,32 @@ vocabularies = {
     'for':"遍历循环",
     'test':"测试",
     }
+for name, value in vocabularies.items():
+    print(name + "的含义是：" + value)
+
+#practice 2
+rivers = {
+    'changjiang':'China',
+    'mixixibi':'America',
+    'amazon':'Brazil',
+    }
+for river, country in rivers.items():
+    print("The " + river.title() + " runs through " + country)
+for river in rivers.keys():
+    print(river.title())
+for country in set(rivers.values()):
+    print(country)
+
+#practice 3
+favorite_languages = {
+    'jen':'python',
+    'sarah':'c',
+    'edward':'ruby',
+    'phil':'python',
+    }
+poll_users = ['jen','sarah','edward','phil','mario','tom','kate']
+for poll_user in poll_users:
+    if poll_user in favorite_languages.keys():
+        print(poll_user + ", thanks for taking the poll!")
+    else:
+        print(poll_user + ", please take the poll as soon as possible.")
