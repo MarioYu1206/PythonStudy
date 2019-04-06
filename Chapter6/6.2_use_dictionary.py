@@ -90,6 +90,6 @@ print("kate's lucky number is " + str(lucky_numbers['kate']))
 vocabularies = {
     'for':"遍历循环",
     'test':"测试",
-}
+    }
 print("for的含义是：" + "\n\t" + vocabularies['for'])
 print("test的含义是：" + "\n\t" + vocabularies['test'])
