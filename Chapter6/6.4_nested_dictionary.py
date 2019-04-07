@@ -120,3 +120,59 @@ for user in people:
     print(user['first_name'] + user['last_name'] + ", " + "Age: " + str(user['age']) + ", City: " + user['city'])
 
 #practice 2
+dog = {'type':'dog','master':'mario'}
+cat = {'type':'cat','master':'jane'}
+rabbit = {'type':'rabbit','master':'tom'}
+deer = {'type':'deer','master':'kate'}
+pets = [dog, cat, rabbit, deer]
+for pet in pets:
+    for key, value in pet.items():
+        print(key + ": " + value)
+
+#practice 3
+favorite_places = {
+    'mario':['dalian','shanghai','beijing'],
+    'jane':['tokyo','new york','london','beijing'],
+    'tom':['shenyang','daqing'],
+    }
+for friend,places in favorite_places.items():
+    print(friend + "'s favorite places are:")
+    for place in places:
+        print("\t" + place)
+
+#practice 4
+lucky_numbers = {
+    'mario':[7,8,9],
+    'jane':[8,2,5,7],
+    'tom':[9],
+    'jack':[3],
+    'kate':[1,0],
+    }
+for name, numbers in lucky_numbers.items():
+    print(name + "'s lucky numbers are:")
+    for number in sorted(numbers):
+        print(number)
+
+#practice 5
+cities = {
+    'dalian':{
+        'country':'china',
+        'population':6000000,
+        'fact':'dongbeimingzhu',
+        },
+    'london':{
+        'country':'great britain',
+        'population':10000000,
+        'fact':'jinrongzhongxin',
+        },
+    'toyko':{
+        'country':'japan',
+        'population':30000000,
+        'fact':'yazhouzuifadachengshi',
+        },
+    }
+for city, city_info in cities.items():
+    print(city)
+    # print(city_info['fact'])
+    for key, value in city_info.items():
+        print("\t" + key + ": " + str(value))
