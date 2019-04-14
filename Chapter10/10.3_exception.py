@@ -120,8 +120,8 @@ while True:
     else:
         print(answer)
 
-practice 2
-similar with practice 1
+#practice 2
+#similar with practice 1
 
 #practice 3
 filename1 = "E:\Python_Projects\crash_course\\files\cats.txt"
