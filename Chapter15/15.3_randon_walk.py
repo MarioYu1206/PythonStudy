@@ -181,7 +181,6 @@ plt.scatter(rw.x_values,rw.y_values,s=5)
 plt.show()
 
 #practice 3
-#practice 2
 rw = RandomWalk()
 rw.fill_walk3()
 plt.scatter(rw.x_values,rw.y_values,s=5)
