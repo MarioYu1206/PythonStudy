@@ -85,7 +85,7 @@ hist.render_to_file('dice_visual_3.svg')
 #练习
 #practice 1
 die1 = Die()
-die2 = Die()
+die2 = Die(10)
 
 results = []
 for roll_num in range(1000):
@@ -105,4 +105,83 @@ hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
 
 hist.add('D6 + D6',frequencies)
-hist.render_to_file('dice_visual_2.svg')
+hist.render_to_file('dice_visual_4.svg')
+
+#practice 2
+die1 = Die(8)
+die2 = Die(8)
+
+results = []
+for roll_num in range(1000):
+    result = die1.roll() + die2.roll()
+    results.append(result)
+
+frequencies = []
+max_result = die1.num_sides + die2.num_sides
+for value in range(2,max_result):
+    frequency = results.count(value)
+    frequencies.append(frequency)
+
+hist = pygal.Bar()
+hist.title = "Results of rolling two D6 1000 times."
+hist.x_labels = [ x for x in range(2,17)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6 + D6',frequencies)
+hist.render_to_file('dice_visual_5.svg')
+
+
+#practice 3
+die1 = Die()
+die2 = Die()
+die3 = Die()
+
+results = []
+for roll_num in range(1000):
+    result = die1.roll() + die2.roll() + die3.roll()
+    results.append(result)
+
+frequencies = []
+max_result = die1.num_sides + die2.num_sides + die3.num_sides
+for value in range(3,max_result):
+    frequency = results.count(value)
+    frequencies.append(frequency)
+
+hist = pygal.Bar()
+hist.title = "Results of rolling three D6 1000 times."
+hist.x_labels = [ x for x in range(3,19)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6 + D6',frequencies)
+hist.render_to_file('dice_visual_6.svg')
+
+
+#practice 4
+die1 = Die()
+die2 = Die()
+
+results = []
+for roll_num in range(1000):
+    result = die1.roll() * die2.roll()
+    results.append(result)
+
+frequencies = []
+max_result = die1.num_sides * die2.num_sides
+for value in range(1,max_result):
+    frequency = results.count(value)
+    frequencies.append(frequency)
+
+hist = pygal.Bar()
+hist.title = "Results of rolling two D6 1000 times."
+hist.x_labels = [ x for x in range(1,37)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6 + D6',frequencies)
+hist.render_to_file('dice_visual_7.svg')
+
+
+#practice 5
+#need more learn and try
